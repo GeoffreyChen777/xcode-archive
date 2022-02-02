@@ -73,7 +73,8 @@ const archive = async ({workspace, project, scheme, configuration, archivePath})
     }
 
     const buildSettings = [
-        "COMPILER_INDEX_STORE_ENABLE=NO"
+        "COMPILER_INDEX_STORE_ENABLE=NO",
+        "OTHER_CODE_SIGN_FLAGS=--keychain $KEYCHAIN_PATH"
     ];
 
     const args = [
